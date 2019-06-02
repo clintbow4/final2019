@@ -8,7 +8,7 @@ output: html_document
 require(tidyverse)
 require(tigerstats)
 avast <-read.csv(file="avastivironal.csv",header=TRUE)
-trialtbl=xtabs(~infected+treatment,data=avast)
+trialtbl=xtabs(~infected+Ivdrug,data=avast)
 avast <- filter(avast,Ivdrug== "user")
 ```
 

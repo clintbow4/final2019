@@ -9,7 +9,7 @@ output: html_document
 require(tidyverse)
 require(tigerstats)
 avast <-read.csv(file="avastivironal.csv",header=TRUE)
-trialtbl=xtabs(~infected+treatment,data=avast)
+trialtbl=xtabs(~infected+LBGT,data=avast)
 avast <- filter(avast,LBGT== "yes")
 ```
 
